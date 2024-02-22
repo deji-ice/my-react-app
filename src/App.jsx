@@ -1,6 +1,7 @@
 import "./App.css";
 import pics from "./assets/countryside-woman-holding-plant-leaves 1(1).png";
 import Child from "./components/Child";
+import Counter from "./components/Counter";
 import Greeting from "./components/Greeting";
 import NavBar from "./components/NavBar";
 import State from "./components/State";
@@ -20,19 +21,15 @@ function App() {
   //   textTransform: "uppercase",
   // };
 
-  const popUp = (name) =>{
-    alert(`my name is ${name}`)
-  }
+  const popUp = (name) => {
+    alert(`my name is ${name}`);
+  };
 
   return (
     <div>
       <NavBar />
-      <State/>
-     
-      {/* <Child>GMCcfdghjliopoiuytrtrytyuiop</Child> */}
-      {/* <Greeting name={'atanda'} />
-      <Greeting name={'CR7'} /> */}
-
+      
+      <Counter />
     </div>
   );
 }
